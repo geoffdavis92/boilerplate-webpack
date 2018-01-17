@@ -1,0 +1,36 @@
+{
+	"name": "webpack-boilerplate",
+	"version": "0.0.0",
+	"main": "index.js",
+	"author": "Geoff Davis <geoffdavis92@gmail.com>",
+	"license": "MIT",
+	"private": true,
+	"scripts": {
+		"start": "webpack --watch",
+		"webpack": "webpack"
+	},
+	"babel": {
+		"presets": [
+			[
+				"env",
+				{
+					"target": {
+						"browsers": "last 2 versions"
+					}
+				}
+			],
+			"stage-2"
+		],
+		"plugins": [
+			"transform-decorators"
+		]
+	},
+	"devDependencies": {
+		"babel-loader": "^7.1.2",
+		"babel-plugin-transform-decorators": "^6.24.1",
+		"babel-preset-env": "^1.6.1",
+		"babel-preset-stage-2": "^6.24.1",
+		"ts-loader": "^3.2.0",
+		"webpack": "^3.10.0"
+	}
+}
